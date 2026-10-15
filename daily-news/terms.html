@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms of Use | Daily News Agreement</title>
+  <meta name="description" content="Terms of Service and conditions for using Daily News portal, content guidelines, external links disclaimer, and intellectual property.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Merriweather:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-container">
+      <div class="brand">
+        <a href="/" class="brand-logo-wrap">
+          <span class="logo-badge">LIVE</span>
+          <h1 class="site-title">Daily <span>News</span></h1>
+        </a>
+        <p class="site-tagline">Your World. Your News.</p>
+      </div>
+      <div class="header-actions">
+        <a href="/" class="btn-primary" style="font-size: 0.85rem; padding: 0.45rem 1rem;">&larr; Back to Live News</a>
+        <button id="themeToggleBtn" class="theme-toggle-btn" aria-label="Toggle dark/light mode">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sticky Nav -->
+  <nav class="main-nav" aria-label="Main Navigation">
+    <div class="container nav-container">
+      <ul class="nav-list">
+        <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="/#world" class="nav-link">World</a></li>
+        <li class="nav-item"><a href="/#pakistan" class="nav-link">Pakistan</a></li>
+        <li class="nav-item"><a href="/#business" class="nav-link">Business</a></li>
+        <li class="nav-item"><a href="/#technology" class="nav-link">Technology</a></li>
+        <li class="nav-item"><a href="/about.html" class="nav-link">About Us</a></li>
+        <li class="nav-item"><a href="/editorial-policy.html" class="nav-link">Editorial Policy</a></li>
+        <li class="nav-item"><a href="/contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <div class="container">
+      <article class="policy-page-wrap">
+        <header class="policy-header">
+          <h1>Terms of Use</h1>
+          <div class="policy-meta">
+            Last Updated: October 2026 &bull; User Agreement &bull; Fair Access Terms
+          </div>
+        </header>
+
+        <div class="policy-content">
+          <p>
+            Welcome to <strong>Daily News</strong>. By accessing or using this website, you agree to be bound by these Terms of Use and all applicable laws and regulations. If you do not agree with any of these terms, you are prohibited from using or accessing this site.
+          </p>
+
+          <h2>1. Use License &amp; Fair Use</h2>
+          <p>
+            Permission is granted to view, browse, and share links to articles on Daily News for personal, non-commercial transitory viewing only. Under this license you may not:
+          </p>
+          <ul>
+            <li>Systematically scrape, mirror, or extract data via automated bots or crawlers without written consent.</li>
+            <li>Attempt to decompile, reverse engineer, or bypass security features of the portal.</li>
+            <li>Remove any copyright, source attribution, or proprietary notations from the materials.</li>
+          </ul>
+
+          <h2>2. Outbound Links to Third-Party Publishers</h2>
+          <p>
+            Daily News aggregates headlines and summaries that contain links to external third-party news outlets. Daily News has not reviewed all of the third-party sites linked to its Internet website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by Daily News of the site. Use of any such linked website is at the user's own risk.
+          </p>
+
+          <h2>3. Advertisements &amp; Sponsored Links</h2>
+          <p>
+            This website displays Google AdSense advertisements and third-party sponsored creatives. Advertisements are labeled in accordance with advertising network standards. Daily News does not warrant or endorse any product, service, or claim made in advertisements shown on the site.
+          </p>
+
+          <h2>4. Disclaimer &amp; Limitation of Liability</h2>
+          <p>
+            The materials on Daily News's website are provided on an 'as is' basis. Daily News makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.
+          </p>
+          <p>
+            In no event shall Daily News or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on Daily News's website.
+          </p>
+
+          <h2>5. Governing Law</h2>
+          <p>
+            Any claim related to Daily News's website shall be governed by applicable laws without regard to its conflict of law provisions.
+          </p>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <div>&copy; 2026 Daily News Network. All rights reserved.</div>
+        <div class="footer-legal-links">
+          <a href="/about.html">About</a>
+          <a href="/contact.html">Contact</a>
+          <a href="/privacy.html">Privacy Policy</a>
+          <a href="/terms.html">Terms of Service</a>
+          <a href="/editorial-policy.html">Editorial Standards</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/ui.js"></script>
+  <script>
+    UI.initTheme();
+    document.getElementById('themeToggleBtn')?.addEventListener('click', () => UI.toggleTheme());
+  </script>
+</body>
+</html>

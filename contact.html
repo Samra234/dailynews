@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Daily News - Newsroom, Press &amp; Advertising Desk</title>
+  <meta name="description" content="Get in touch with the Daily News editorial team, press office, advertising department, or technical support.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Merriweather:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <!-- Minimal Header for Subpages -->
+  <header class="site-header">
+    <div class="container header-container">
+      <div class="brand">
+        <a href="/" class="brand-logo-wrap">
+          <span class="logo-badge">LIVE</span>
+          <h1 class="site-title">Daily <span>News</span></h1>
+        </a>
+        <p class="site-tagline">Your World. Your News.</p>
+      </div>
+      <div class="header-actions">
+        <a href="/" class="btn-primary" style="font-size: 0.85rem; padding: 0.45rem 1rem;">&larr; Back to Live News</a>
+        <button id="themeToggleBtn" class="theme-toggle-btn" aria-label="Toggle dark/light mode">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sticky Nav Bar -->
+  <nav class="main-nav" aria-label="Main Navigation">
+    <div class="container nav-container">
+      <ul class="nav-list">
+        <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="/#world" class="nav-link">World</a></li>
+        <li class="nav-item"><a href="/#pakistan" class="nav-link">Pakistan</a></li>
+        <li class="nav-item"><a href="/#business" class="nav-link">Business</a></li>
+        <li class="nav-item"><a href="/#technology" class="nav-link">Technology</a></li>
+        <li class="nav-item"><a href="/about.html" class="nav-link">About Us</a></li>
+        <li class="nav-item"><a href="/editorial-policy.html" class="nav-link">Editorial Policy</a></li>
+        <li class="nav-item active"><a href="/contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Body Content -->
+  <main class="main-content">
+    <div class="container">
+      <article class="policy-page-wrap">
+        <header class="policy-header">
+          <h1>Contact Daily News</h1>
+          <div class="policy-meta">
+            Direct Communications &bull; Newsroom &bull; Press &bull; Commercial Partnerships
+          </div>
+        </header>
+
+        <div class="policy-content">
+          <p>
+            We welcome constructive feedback, news tips, factual correction requests, and commercial inquiries from our international readership and media colleagues.
+          </p>
+
+          <div class="contact-grid">
+            <!-- Direct Department Contacts -->
+            <div class="contact-card">
+              <h3>Editorial &amp; Newsroom</h3>
+              <p>For breaking tips, journalistic questions, or story pitches:</p>
+              <p><strong>Email:</strong> <a href="mailto:editor@dailynews.portal" style="color: var(--accent-red);">editor@dailynews.portal</a></p>
+              <p><strong>Hours:</strong> 24/7 Global Wire Desk</p>
+            </div>
+
+            <div class="contact-card">
+              <h3>Corrections &amp; Accuracy</h3>
+              <p>To report a factual inaccuracy or attribution clarification:</p>
+              <p><strong>Email:</strong> <a href="mailto:corrections@dailynews.portal" style="color: var(--accent-red);">corrections@dailynews.portal</a></p>
+              <p><strong>Target Response:</strong> Within 12-24 hours</p>
+            </div>
+
+            <div class="contact-card" id="press">
+              <h3>Press &amp; Syndication</h3>
+              <p>For media commentary, republication permissions, and press kits:</p>
+              <p><strong>Email:</strong> <a href="mailto:press@dailynews.portal" style="color: var(--accent-red);">press@dailynews.portal</a></p>
+            </div>
+
+            <div class="contact-card">
+              <h3>Advertising &amp; Partnerships</h3>
+              <p>For Google AdSense compliance inquiries or direct sponsorships:</p>
+              <p><strong>Email:</strong> <a href="mailto:partnerships@dailynews.portal" style="color: var(--accent-red);">partnerships@dailynews.portal</a></p>
+            </div>
+          </div>
+
+          <h2 style="margin-top: 2.5rem;">Send a Direct Message to the Desk</h2>
+          <form id="contactForm" style="display: flex; flex-direction: column; gap: 1rem; margin-top: 1rem;" onsubmit="handleContactSubmit(event)">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+              <div class="form-group">
+                <label for="contactName" class="form-label">Full Name *</label>
+                <input type="text" id="contactName" class="form-input" required placeholder="Your full name">
+              </div>
+              <div class="form-group">
+                <label for="contactEmail" class="form-label">Email Address *</label>
+                <input type="email" id="contactEmail" class="form-input" required placeholder="you@domain.com">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="contactSubject" class="form-label">Department / Topic *</label>
+              <select id="contactSubject" class="form-input" required>
+                <option value="editorial">Editorial News Desk &amp; Tips</option>
+                <option value="corrections">Factual Correction Request</option>
+                <option value="advertising">Advertising &amp; AdSense Inquiry</option>
+                <option value="technical">Technical Website Issue</option>
+                <option value="other">General Feedback</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="contactMessage" class="form-label">Message *</label>
+              <textarea id="contactMessage" rows="5" class="form-input" required placeholder="Please provide specific details, article links (if applicable), and your message..."></textarea>
+            </div>
+
+            <div id="contactFormNotice" style="display: none; padding: 0.85rem; border-radius: 6px; font-size: 0.9rem; font-weight: 500;"></div>
+
+            <button type="submit" class="btn-primary" style="align-self: flex-start; padding: 0.75rem 1.75rem;">
+              Send Message
+            </button>
+          </form>
+
+          <h2 style="margin-top: 3rem;">Headquarters &amp; Mailing Information</h2>
+          <p>
+            <strong>Daily News International Digital Operations</strong><br>
+            Media Tower, Suite 402<br>
+            International Media District<br>
+            Email: contact@dailynews.portal
+          </p>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <div>&copy; 2026 Daily News Network. All rights reserved.</div>
+        <div class="footer-legal-links">
+          <a href="/about.html">About</a>
+          <a href="/contact.html">Contact</a>
+          <a href="/privacy.html">Privacy Policy</a>
+          <a href="/terms.html">Terms of Service</a>
+          <a href="/editorial-policy.html">Editorial Standards</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/ui.js"></script>
+  <script>
+    UI.initTheme();
+    document.getElementById('themeToggleBtn')?.addEventListener('click', () => UI.toggleTheme());
+
+    function handleContactSubmit(e) {
+      e.preventDefault();
+      const notice = document.getElementById('contactFormNotice');
+      if (!notice) return;
+      notice.style.display = 'block';
+      notice.style.backgroundColor = '#dcfce7';
+      notice.style.color = '#166534';
+      notice.style.border = '1px solid #bbf7d0';
+      notice.innerHTML = '&#10003; Thank you. Your message has been logged with our editorial desk. We will respond within 24-48 business hours.';
+      document.getElementById('contactForm').reset();
+    }
+  </script>
+</body>
+</html>

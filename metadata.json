@@ -1,0 +1,6 @@
+{
+  "name": "Daily News - Live Global & Local News Portal",
+  "description": "Modern responsive live news portal with real news API integration, breaking news ticker, categories, dark mode, and Google AdSense compliance.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
